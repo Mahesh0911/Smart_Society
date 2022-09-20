@@ -69,6 +69,8 @@ public class LoginActivity extends AppCompatActivity {
         auth.signInWithEmailAndPassword(eml,pass).addOnFailureListener(LoginActivity.this, new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
+                username.setText("");
+                password.setText("");
                 Toast.makeText(LoginActivity.this, "Invalid Credentials.", Toast.LENGTH_SHORT).show();
             }
         });
