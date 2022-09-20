@@ -63,8 +63,6 @@ public class LoginActivity extends AppCompatActivity {
                 Intent intent = new Intent(LoginActivity.this, Dashboard.class);
                 startActivity(intent);
             }
-
-
         });
         auth.signInWithEmailAndPassword(eml,pass).addOnFailureListener(LoginActivity.this, new OnFailureListener() {
             @Override
