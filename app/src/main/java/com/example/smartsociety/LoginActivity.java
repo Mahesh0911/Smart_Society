@@ -3,6 +3,7 @@ package com.example.smartsociety;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.text.TextUtils;
@@ -11,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -57,9 +59,17 @@ public class LoginActivity extends AppCompatActivity {
         auth.signInWithEmailAndPassword(eml,pass).addOnSuccessListener(LoginActivity.this, new OnSuccessListener<AuthResult>() {
             @Override
             public void onSuccess(AuthResult authResult) {
+                Toast.makeText(LoginActivity.this, "Login Successful.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(LoginActivity.this, Dashboard.class);
                 startActivity(intent);
-                Toast.makeText(LoginActivity.this, "Login Successful.", Toast.LENGTH_SHORT).show();
+            }
+
+
+        });
+        auth.signInWithEmailAndPassword(eml,pass).addOnFailureListener(LoginActivity.this, new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+                Toast.makeText(LoginActivity.this, "Invalid Credentials.", Toast.LENGTH_SHORT).show();
             }
         });
     }
