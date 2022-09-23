@@ -21,7 +21,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <ImageButton
-            android:id="@+id/imageButton4"
+            android:id="@+id/homebtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -30,7 +30,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/imageButton5"
+            android:id="@+id/visitorbtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -39,7 +39,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageButton
-            android:id="@+id/imageButton6"
+            android:id="@+id/billbtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -61,7 +61,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <Button
-            android:id="@+id/button19"
+            android:id="@+id/parkingbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20px"
@@ -72,7 +72,7 @@
             android:textColor="#000000" />
 
         <Button
-            android:id="@+id/button18"
+            android:id="@+id/alertbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20px"
@@ -95,7 +95,7 @@
         app:layout_constraintTop_toBottomOf="@+id/scrollView3">
 
         <Button
-            android:id="@+id/button16"
+            android:id="@+id/familybtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -107,7 +107,7 @@
             app:cornerRadius="5dp" />
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/vehiclebtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -118,7 +118,7 @@
             android:textColor="#000000" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/societybtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
