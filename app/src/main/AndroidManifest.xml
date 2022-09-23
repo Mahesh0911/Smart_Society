@@ -13,15 +13,23 @@
         android:theme="@style/Theme.SmartSociety"
         tools:targetApi="31">
         <activity
+            android:name=".emergencyAlerts"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".registerPage"
             android:exported="true"
-            android:windowSoftInputMode="adjustPan"/>
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".Dashboard"
             android:exported="true" />
         <activity
             android:name=".parkingManagement"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".Dashboard"/>
         <activity
             android:name=".LoginActivity"
             android:exported="true"
