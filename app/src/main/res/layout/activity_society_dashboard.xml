@@ -4,34 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".parkingManagement">
+    tools:context=".societyDashboard">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
-        android:layout_height="57dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/styles"
         android:backgroundTint="#FE0157"
-        android:padding="5dp"
-        android:text="Your Vehicles"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        android:textStyle="bold"
+        android:padding="10dp"
+        android:text="Your Society Memebers"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/membrs"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
-    <ListView
-        android:id="@+id/vehicles"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/membrs"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="15dp"
+        android:background="@drawable/styles"
         android:padding="20dp"
-        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.5" />
 </androidx.constraintlayout.widget.ConstraintLayout>
