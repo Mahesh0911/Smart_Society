@@ -5,34 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="338dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="5dp"
-        android:text="Change Password"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="338dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="5dp"
-        android:text="Notificaton Settings"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textview_Add" />
-
     <TextView
         android:id="@+id/textview_Add"
         android:layout_width="0dp"
@@ -75,70 +47,10 @@
         android:layout_width="122dp"
         android:layout_height="54dp"
         android:layout_marginStart="144dp"
-        android:layout_marginTop="15dp"
         android:layout_marginEnd="145dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="36dp"
         android:text="Logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchdarkmode" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="36dp"
-        app:layout_constraintBottom_toTopOf="@+id/textview_Add"
-        app:layout_constraintEnd_toStartOf="@+id/textview_username"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="338dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="5dp"
-        android:text="Change Language"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
-
-    <Switch
-        android:id="@+id/switchdarkmode"
-        android:layout_width="327dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="41dp"
-        android:layout_marginBottom="5dp"
-        android:text="Dark Mode"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/logoutButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="338dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="35dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginBottom="5dp"
-        android:text="Visitor's Report"
-        app:layout_constraintBottom_toTopOf="@+id/switchdarkmode"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
