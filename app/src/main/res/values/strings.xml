@@ -14,4 +14,6 @@
     <string name="tenant">Tenant</string>
     <string name="owner">Owner</string>
     <string name="family_member">Family Member</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>

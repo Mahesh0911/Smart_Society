@@ -13,50 +13,42 @@
         android:theme="@style/Theme.SmartSociety"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
-            android:name=".Java.societyDashboard"
-=======
-            android:name=".notifications"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".societyDashboard"
->>>>>>> origin/master
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Dashboard">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Java.parkingQuery"
-            android:exported="false">
+            android:name=".parkingQuery"
+            android:exported="false"
+            android:parentActivityName=".Dashboard">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Java.societyDashboard$emergencyAlerts"
-            android:exported="false">
+            android:name=".emergencyAlerts"
+            android:exported="false"
+            android:parentActivityName=".Dashboard">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".Java.registerPage"
+            android:name=".registerPage"
             android:exported="true"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".Java.Dashboard"
+            android:name=".Dashboard"
             android:exported="true" />
         <activity
-            android:name=".Java.parkingManagement"
+            android:name=".parkingManagement"
             android:exported="true"
-            android:parentActivityName=".Java.Dashboard" />
+            android:parentActivityName=".Dashboard" />
         <activity
-            android:name=".Java.LoginActivity"
+            android:name=".LoginActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
