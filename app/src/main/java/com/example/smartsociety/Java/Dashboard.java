@@ -1,20 +1,13 @@
-package com.example.smartsociety;
+package com.example.smartsociety.Java;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
-import android.widget.Toolbar;
 
-import com.google.android.material.navigation.NavigationView;
+import com.example.smartsociety.R;
 
 public class Dashboard extends AppCompatActivity {
     public Button parking;
@@ -34,14 +27,14 @@ public class Dashboard extends AppCompatActivity {
         vehiclebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Dashboard.this,parkingManagement.class);
+                Intent intent=new Intent(Dashboard.this, parkingManagement.class);
                 startActivity(intent);
             }
         });
         alertbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Dashboard.this,emergencyAlerts.class);
+                Intent intent=new Intent(Dashboard.this, societyDashboard.emergencyAlerts.class);
                 startActivity(intent);
             }
         });
@@ -49,7 +42,7 @@ public class Dashboard extends AppCompatActivity {
         parking.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Dashboard.this,parkingQuery.class);
+                Intent intent=new Intent(Dashboard.this, parkingQuery.class);
                 startActivity(intent);
             }
         });
@@ -57,7 +50,7 @@ public class Dashboard extends AppCompatActivity {
         societybtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(Dashboard.this,societyDashboard.class);
+                Intent intent=new Intent(Dashboard.this, societyDashboard.class);
                 startActivity(intent);
             }
         });

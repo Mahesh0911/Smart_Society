@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="20px"
     android:background="#FFFFFF"
-    tools:context=".Dashboard">
+    tools:context=".Java.Dashboard">
 
     <LinearLayout
         android:id="@+id/linearLayout3"

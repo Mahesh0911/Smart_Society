@@ -1,4 +1,4 @@
-package com.example.smartsociety;
+package com.example.smartsociety.Java;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.smartsociety.R;
 
 public class parkingQuery extends AppCompatActivity {
     public Button submit;
@@ -17,7 +19,7 @@ public class parkingQuery extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(parkingQuery.this,Dashboard.class);
+                Intent intent=new Intent(parkingQuery.this, Dashboard.class);
                 startActivity(intent);
             }
         });

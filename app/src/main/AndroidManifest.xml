@@ -13,39 +13,39 @@
         android:theme="@style/Theme.SmartSociety"
         tools:targetApi="31">
         <activity
-            android:name=".societyDashboard"
+            android:name=".Java.societyDashboard"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".parkingQuery"
+            android:name=".Java.parkingQuery"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".emergencyAlerts"
+            android:name=".Java.societyDashboard$emergencyAlerts"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".registerPage"
+            android:name=".Java.registerPage"
             android:exported="true"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".Dashboard"
+            android:name=".Java.Dashboard"
             android:exported="true" />
         <activity
-            android:name=".parkingManagement"
+            android:name=".Java.parkingManagement"
             android:exported="true"
-            android:parentActivityName=".Dashboard" />
+            android:parentActivityName=".Java.Dashboard" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".Java.LoginActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
