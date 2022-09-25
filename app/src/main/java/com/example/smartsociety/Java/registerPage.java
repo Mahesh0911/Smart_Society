@@ -1,4 +1,4 @@
-package com.example.smartsociety;
+package com.example.smartsociety.Java;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.smartsociety.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -51,7 +52,7 @@ public class registerPage extends AppCompatActivity{
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(registerPage.this, "success", Toast.LENGTH_SHORT).show();
-                    Intent intent=new Intent(registerPage.this,LoginActivity.class);
+                    Intent intent=new Intent(registerPage.this, LoginActivity.class);
                     startActivity(intent);
                 }else{
                     Toast.makeText(registerPage.this, "Failed", Toast.LENGTH_SHORT).show();
