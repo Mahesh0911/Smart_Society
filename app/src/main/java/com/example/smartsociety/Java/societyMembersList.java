@@ -1,16 +1,13 @@
-package com.example.smartsociety;
+package com.example.smartsociety.Java;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.smartsociety.R;
 
 public class societyMembersList extends RecyclerView.Adapter<societyMembersList.ViewHolder> {
     private String[] localDataSet;

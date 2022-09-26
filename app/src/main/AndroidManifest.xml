@@ -13,29 +13,25 @@
         android:theme="@style/Theme.SmartSociety"
         tools:targetApi="31">
         <activity
-            android:name=".notifications"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".societyDashboard"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Dashboard">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".parkingQuery"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Dashboard">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".emergencyAlerts"
-            android:exported="false">
+            android:exported="false"
+            android:parentActivityName=".Dashboard">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
