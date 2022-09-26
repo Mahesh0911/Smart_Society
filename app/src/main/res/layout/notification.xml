@@ -96,7 +96,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textview_username"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars[3]" />
 
     <Button
         android:id="@+id/button2"
